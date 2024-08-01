@@ -8,8 +8,7 @@
     <title>Nathan That Ton Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -41,20 +40,24 @@
                         interest in Cybersecurity and Software Development</p>
 
                     <div class="btn-group">
-                        <a href="https://nathanthatton.github.io/personal-website/docs/Nathan%20That%20Ton%20Resume.pdf" class="btn active" target="_blank">View Resume</a>
+                        <button id="viewResumeBtn" class="btn active">View Resume</button>
                         <a href="mailto:that.nathanton@gmail.com" class="btn">Contact</a>
                     </div>
 
                     <div class="social">
-                        <a href="https://www.facebook.com/nathan.ton.54/" target="_blank"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/nathan-ton-b75499289/" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/nathanxton/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/nathan.ton.54/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/nathan-ton-b75499289/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/nathanxton/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://github.com/nathanthatton" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
+
+                <!-- Embed PDF Section (Initially hidden) -->
+                <div id="pdfViewer" class="pdf-viewer" style="display: none;">
+                    <h2>View My Resume</h2>
+                    <embed src="docs/Nathan%20That%20Ton%20Resume.pdf" type="application/pdf" width="100%" height="600px">
+                </div>
+                <!-- End Embed PDF Section -->
             </div>
         </div>
     </div>
@@ -73,6 +76,16 @@
             typeSpeed: 50,
             backSpeed: 55,
             loop: true
+        });
+
+        // JavaScript to toggle PDF viewer
+        document.getElementById('viewResumeBtn').addEventListener('click', function () {
+            var pdfViewer = document.getElementById('pdfViewer');
+            if (pdfViewer.style.display === "none") {
+                pdfViewer.style.display = "block";
+            } else {
+                pdfViewer.style.display = "none";
+            }
         });
     </script>
 </body>
