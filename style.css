@@ -157,7 +157,6 @@ nav .navlinks li {
   transform: rotate(360deg);
 }
 
-/* Responsive design */
 @media(max-width:930px) {
   nav .togglebtn {
     display: none;
