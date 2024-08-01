@@ -9,6 +9,10 @@
 body {
   overflow-x: hidden;
   background: linear-gradient(to bottom, #000, #69359c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .hero-header {
@@ -16,6 +20,9 @@ body {
   height: 100%;
   min-height: 100vh;
   background: linear-gradient(to bottom, #000, #69359c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
@@ -26,6 +33,7 @@ body {
 }
 
 header {
+  width: 100%;
   padding: 40px 0 30px;
   display: flex;
   justify-content: space-between;
@@ -77,6 +85,7 @@ nav .navlinks li {
   align-items: center;
   flex-direction: column;
   padding-top: 4rem;
+  text-align: center;
 }
 
 .container .hero-pic {
@@ -156,7 +165,6 @@ nav .navlinks li {
   color: #69359c;
   transform: rotate(360deg);
 }
-
 
 @media(max-width:930px) {
   nav .togglebtn {
