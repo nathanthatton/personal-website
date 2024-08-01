@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan That Ton Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-n"></i>
+                    <div class="logo-text">Nathan That Ton</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-text">
+                    <h5>Hello I'm a <span class="input">Student</span></h5>
+                    <h1>Nathan That Ton</h1>
+                    <p>Undergraduate student at Virginia Tech pursuing a Bachelor of Science in Computer Science with an
+                        interest in Cybersecurity and Software Development</p>
+
+                    <div class="btn-group">
+                        <a href="images/Nathan%20That%20Ton%20Resume.pdf" class="btn active" target="_blank">View
+                            Resume</a>
+                        <a href="mailto:that.nathanton@gmail.com" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/nathan.ton.54/" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/nathan-ton-b75499289/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/nathanxton/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/nton2005" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input", {
+            strings: ["Student", "Web Developer", "Full-Stack Developer"],
+            typeSpeed: 50,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
